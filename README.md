@@ -1,6 +1,8 @@
 ## Documentation and explanations 
 To display the statuspage data of a website through our react front-end we need to perform a http requests to the status API related to the website, as we don't actually have an API, i needed to set up a server that crawls the target websites and turns it into an API that i could use to feed my app.
 
+The app hosted on gh-pages: https://ibro-dev.github.io/StatusCheckerTask/
+
 The solution contains two parts:
 
      1) A back-end app "scraperapp", tech used Nodejs, Express, Cheerio, axios.
