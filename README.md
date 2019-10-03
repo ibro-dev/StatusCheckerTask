@@ -1,3 +1,23 @@
+## Documentation and explanations 
+To display the statuspage data of a website through our react front-end we need to perform a http requests to the status API related to the website, as we don't actually have an API, i needed to set up a server that crawls the target websites and turns it into an API that i could use to feed my app.
+
+The solution contains two parts:
+     1) A back-end app "scraperapp", tech used Nodejs, Express, Cheerio, axios.
+       done features:
+        -Fetching a webpage using the HTTP client axios.
+        -Extracting data from a webpage using cheerio.
+        -Saving the data in JSON format and create an output.json file in the public folder if the react-app to -be used during HTTP requests.
+    
+    2) A front-end app "checkstatuspage", tech used React+Redux, axios, CSS Bulma framework.
+       done features:
+        -create a component "PageStatus" that performs http requests to the server and get a Json format response using axios.
+        -display the requested data into the UI.
+        -When someone wants to add new statuspage ? i created a component "PagesList" that could post a new statuspage Url to the server to be then scraped in order to extract its content and save it into a custom Json format file.
+        -added an autoamted refresh(page refresh devery 10 mins)
+        -nothing is hardcoded in the page
+        -I spent about 4 hours with the task
+########################################################################
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
