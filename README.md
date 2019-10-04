@@ -9,7 +9,7 @@ The solution contains two parts:
        done features:
         -Fetching a webpage using the HTTP client axios.
         -Extracting data from a webpage using cheerio.
-        -Saving the data in JSON format and create an output.json file in the public folder if the react-app to -be used during HTTP requests.
+        -Saving the data in JSON format and create an output.json file in the public folder of the react-app to be used during HTTP requests.
     
     2) A front-end app "checkstatuspage", tech used React+Redux, axios, CSS Bulma framework.
        done features:
